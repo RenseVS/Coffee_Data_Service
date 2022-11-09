@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "cdU7EB+mYeW66NIVVLwj6NL2WvtJ7rw3Ytjp6Kbb+xqkIsn9doTdp+YqgwL7a36CVeqpeE4F78zZVDYXUfUkww==",
+  "dgSpecHash": "tsh5lRlYqwH8kRAmMmY5owr/Kix7NiMBPD7+g1VMd1J1blsWcsn/6WZwIKDLWNjIXYAc2H3zNcby8lxZga9qaw==",
   "success": true,
-  "projectFilePath": "/Users/rensevanstiphout/Local_Git/Coffee_Data_Service/Coffee_Data_Service.UnitTest/Coffee_Data_Service.UnitTest.csproj",
+  "projectFilePath": "/Users/rensevanstiphout/Local_Git/Coffee_Data_Service/Coffee_Data_Service/Coffee_Data_Service.UnitTest/Coffee_Data_Service.UnitTest.csproj",
   "expectedPackageFiles": [
     "/Users/rensevanstiphout/.nuget/packages/coverlet.collector/3.1.2/coverlet.collector.3.1.2.nupkg.sha512",
     "/Users/rensevanstiphout/.nuget/packages/microsoft.codecoverage/17.1.0/microsoft.codecoverage.17.1.0.nupkg.sha512",

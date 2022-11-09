@@ -1,7 +1,5 @@
 ﻿<Properties StartupConfiguration="{A639C549-D48E-4AA2-ADA0-94D98D31A096}|Default">
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints />
   <MonoDevelop.Ide.ItemProperties.docker-compose PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.ItemProperties.Coffee__Data__Service.IntegrationTest FirstBuild="True" />
@@ -25,21 +23,14 @@
       <File FileName="Coffee_Data_Service/Enums/CoffeeType.cs" Line="1" Column="1" />
       <File FileName="Dockerfile" Line="5" Column="10" />
       <File FileName="docker-compose.override.yml" Line="8" Column="13" />
+      <File FileName="Coffee_Data_Service.IntegrationTest/UnitTest1.cs" Line="9" Column="6" />
       <File FileName="../Coffee_Data_Service.UnitTest/UnitTest1.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Coffee_Data_Service" expanded="True">
-            <Node name="Solution Items" expanded="True" />
-            <Node name="Coffee_Data_Service" expanded="True">
-              <Node name="Controllers" expanded="True" />
-              <Node name="Data" expanded="True" />
-              <Node name="DTOs" expanded="True" />
-              <Node name="Entities" expanded="True" />
-              <Node name="Enums" expanded="True" />
-              <Node name="Services" expanded="True" />
-            </Node>
+            <Node name="Coffee_Data_Service" expanded="True" />
             <Node name="Coffee_Data_Service.IntegrationTest" expanded="True" />
             <Node name="Coffee_Data_Service.UnitTest" expanded="True" />
             <Node name="docker-compose" expanded="True">

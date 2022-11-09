@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/rensevanstiphout/Local_Git/Coffee_Data_Service/Coffee_Data_Service.UnitTest/Coffee_Data_Service.UnitTest.csproj": {}
+    "/Users/rensevanstiphout/Local_Git/Coffee_Data_Service/Coffee_Data_Service/Coffee_Data_Service.UnitTest/Coffee_Data_Service.UnitTest.csproj": {}
   },
   "projects": {
-    "/Users/rensevanstiphout/Local_Git/Coffee_Data_Service/Coffee_Data_Service.UnitTest/Coffee_Data_Service.UnitTest.csproj": {
+    "/Users/rensevanstiphout/Local_Git/Coffee_Data_Service/Coffee_Data_Service/Coffee_Data_Service.UnitTest/Coffee_Data_Service.UnitTest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/rensevanstiphout/Local_Git/Coffee_Data_Service/Coffee_Data_Service.UnitTest/Coffee_Data_Service.UnitTest.csproj",
+        "projectUniqueName": "/Users/rensevanstiphout/Local_Git/Coffee_Data_Service/Coffee_Data_Service/Coffee_Data_Service.UnitTest/Coffee_Data_Service.UnitTest.csproj",
         "projectName": "Coffee_Data_Service.UnitTest",
-        "projectPath": "/Users/rensevanstiphout/Local_Git/Coffee_Data_Service/Coffee_Data_Service.UnitTest/Coffee_Data_Service.UnitTest.csproj",
+        "projectPath": "/Users/rensevanstiphout/Local_Git/Coffee_Data_Service/Coffee_Data_Service/Coffee_Data_Service.UnitTest/Coffee_Data_Service.UnitTest.csproj",
         "packagesPath": "/Users/rensevanstiphout/.nuget/packages/",
-        "outputPath": "/Users/rensevanstiphout/Local_Git/Coffee_Data_Service/Coffee_Data_Service.UnitTest/obj/",
+        "outputPath": "/Users/rensevanstiphout/Local_Git/Coffee_Data_Service/Coffee_Data_Service/Coffee_Data_Service.UnitTest/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
