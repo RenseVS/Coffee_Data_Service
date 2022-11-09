@@ -1,0 +1,11 @@
+version: '3.4'
+
+services:
+  coffee_data_service:
+    image: ${DOCKER_REGISTRY-}coffeedataservice
+    build:
+      context: .
+      dockerfile: Dockerfile
+  nosqldb:
+    image: mongo
+

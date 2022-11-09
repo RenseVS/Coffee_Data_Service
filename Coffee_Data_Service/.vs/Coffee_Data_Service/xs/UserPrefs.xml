@@ -1,0 +1,54 @@
+﻿<Properties StartupConfiguration="{A639C549-D48E-4AA2-ADA0-94D98D31A096}|Default">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.docker-compose PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.Coffee__Data__Service PreferredExecutionTarget="/Applications/Safari.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="docker-compose.override.yml">
+    <Files>
+      <File FileName="Coffee_Data_Service/Data/DBContext.cs" Line="12" Column="1" />
+      <File FileName="Coffee_Data_Service/Services/CoffeeMadeService.cs" Line="16" Column="1" />
+      <File FileName="Coffee_Data_Service/Controllers/WeatherForecastController.cs" Line="31" Column="52" />
+      <File FileName="Coffee_Data_Service/Program.cs" Line="25" Column="24" />
+      <File FileName="Coffee_Data_Service/Entities/Coffee.cs" Line="49" Column="52" />
+      <File FileName="docker-compose.dcproj" Line="1" Column="1" />
+      <File FileName="docker-compose.yml" Line="1" Column="1" />
+      <File FileName=".dockerignore" Line="1" Column="1" />
+      <File FileName="Coffee_Data_Service/appsettings.json" Line="12" Column="30" />
+      <File FileName="Coffee_Data_Service/Controllers/StatisticController.cs" Line="31" Column="1" />
+      <File FileName="Coffee_Data_Service/Services/StatisticService.cs" Line="21" Column="1" />
+      <File FileName="Coffee_Data_Service/Enums/FlavorType.cs" Line="6" Column="20" />
+      <File FileName="Coffee_Data_Service/Enums/CoffeeType.cs" Line="1" Column="1" />
+      <File FileName="Dockerfile" Line="5" Column="10" />
+      <File FileName="docker-compose.override.yml" Line="8" Column="13" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Coffee_Data_Service" expanded="True">
+            <Node name="Solution Items" expanded="True" />
+            <Node name="Coffee_Data_Service" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Data" expanded="True" />
+              <Node name="DTOs" expanded="True" />
+              <Node name="Entities" expanded="True" />
+              <Node name="Enums" expanded="True" />
+              <Node name="Services" expanded="True" />
+            </Node>
+            <Node name="docker-compose" expanded="True">
+              <Node name="docker-compose.yml" expanded="True">
+                <Node name="docker-compose.override.yml" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+</Properties>

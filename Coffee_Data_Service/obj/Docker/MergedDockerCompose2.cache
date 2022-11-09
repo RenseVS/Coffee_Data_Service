@@ -1,0 +1,29 @@
+name: dockercompose13626313585352996917
+services:
+  coffee_data_service:
+    build:
+      context: /Users/rensevanstiphout/Local_Git/Coffee_Data_Service/Coffee_Data_Service
+      dockerfile: Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+    image: coffeedataservice
+    networks:
+      default: null
+    ports:
+    - mode: ingress
+      target: 80
+      protocol: tcp
+  nosqldb:
+    container_name: coffee_data_service_nosqldb
+    image: mongo
+    networks:
+      default: null
+    ports:
+    - mode: ingress
+      target: 27017
+      published: "27017"
+      protocol: tcp
+    restart: always
+networks:
+  default:
+    name: dockercompose13626313585352996917_default

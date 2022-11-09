@@ -1,0 +1,98 @@
+version: 2.1
+
+orbs:
+  dotnet-sonarscanner: storytel/dotnet-sonarscanner@1.4.3
+
+jobs:
+  build:
+    docker:
+      - image: mcr.microsoft.com/dotnet/sdk:6.0
+    steps:
+      - checkout
+      - run:
+          working_directory: Coffee_Data_Service/Coffee_Data_Service
+          name: build solution
+          command: | 
+            dotnet restore
+            dotnet build
+  unittest:
+    docker:
+      - image: mcr.microsoft.com/dotnet/sdk:6.0
+    steps:
+      - checkout
+      - run:
+          working_directory: Coffee_Data_Service/Coffee_Data_Service.IntegrationTest
+          name: Run integrationtests
+          command: dotnet test
+  integrationtest:
+    docker:
+      - image: mcr.microsoft.com/dotnet/sdk:6.0
+    steps:
+      - checkout
+      - run:
+          working_directory: Coffee_Data_Service/Coffee_Data_Service.UnitTest
+          name: Run unittests
+          command: dotnet test
+  dockerbuild:
+    docker:
+      - image: mcr.microsoft.com/dotnet/sdk:6.0
+    steps:
+      - checkout
+  dockerrelease:
+    docker:
+      - image: mcr.microsoft.com/dotnet/sdk:6.0
+    steps:
+      - checkout
+  sonarqube:
+    docker:
+      - image: mcr.microsoft.com/dotnet/sdk:6.0
+    working_directory: Coffee_Data_Service/Coffee_Data_Service
+    steps:
+      - checkout
+      - run:
+          name: Install & Run SonarScan and publish to sonarcloud
+          command: |
+            mkdir -p /usr/share/man/man1 && apt-get update && apt-get install -y --no-install-recommends openjdk-11-jre-headless && rm -rf /var/lib/apt/lists/*
+            export JAVA_VER=11
+            export JAVA_HOME="/usr/lib/jvm/java-11-openjdk-amd64"
+            export PATH="${PATH}:/root/.dotnet/tools"
+            cd Coffee_Data_Service/Coffee_Data_Service
+            dotnet new tool-manifest
+            dotnet tool install dotnet-sonarscanner
+            dotnet sonarscanner begin /o:"rensevs" /k:"RenseVS_Coffee-Data" /d:sonar.host.url="https://sonarcloud.io" /d:sonar.login=$token
+            dotnet build
+            dotnet sonarscanner end /d:sonar.login=$token
+
+
+  
+
+workflows:
+  build:
+    jobs:
+      - build
+      - dockerbuild
+      - unittest:
+          requires: 
+            - build
+            - dockerbuild
+      - integrationtest:
+          requires: 
+            - build
+            - dockerbuild
+      - sonarqube:
+          context: sonarcloud
+          filters:
+            branches:
+              only: 
+                - main
+                - develop
+          requires: 
+            - unittest
+            - integrationtest
+      - dockerrelease:
+          filters:
+            branches:
+              only: 
+                - main
+          requires: 
+            - sonarqube

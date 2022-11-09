@@ -1,0 +1,1 @@
+/Users/rensevanstiphout/Projects/Coffee_Data_Service/obj/Debug/docker-compose.dcproj.CoreCompileInputs.cache
