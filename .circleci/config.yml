@@ -15,7 +15,7 @@ jobs:
           command: | 
             dotnet restore
             dotnet build
-  unittest:
+  integrationtest:
     docker:
       - image: mcr.microsoft.com/dotnet/sdk:6.0
     steps:
@@ -24,7 +24,7 @@ jobs:
           working_directory: Coffee_Data_Service/Coffee_Data_Service.IntegrationTest
           name: Run integrationtests
           command: dotnet test
-  integrationtest:
+  unittest:
     docker:
       - image: mcr.microsoft.com/dotnet/sdk:6.0
     steps:
